@@ -1,4 +1,5 @@
 # prophet
+
 An audio guide for destroying oracles in Destiny's Vault of Glass raid.
 
 This project allows you to make any encounter with oracles without having to look at them when spawning.
@@ -28,7 +29,7 @@ To configure VB-Cable with Destiny 2 follow these steps:
 
 ![preferences_2](https://i.stack.imgur.com/QcQvp.png)
 
-*Note: Make sure you choose the output of the application and select CABLE Input (VB-Audio Virtual Cable)*
+_Note: Make sure you choose the output of the application and select CABLE Input (VB-Audio Virtual Cable)_
 
 5. Go back to the Sound settings and select Sound control panel on the right
 
@@ -53,3 +54,11 @@ If you fail the oracles encounter it's better to reset the program just to be su
 4. Test some solutions for console players.
 
 Thanks and good luck!
+
+# Notes
+
+- If running on Windows, you will need to run the [following commands](https://stackoverflow.com/a/59594881/884296) to get the audio package `pyaudio` installed correctly:
+  ```
+  pip install pipwin
+  pipwin install pyaudio
+  ```
