@@ -46,6 +46,11 @@ if __name__ == '__main__':
     with open(resource_path(encounter + '.json')) as f:
         oracle_map = json.load(f)
 
+    if encounter == 'templar':
+        time_threshold = 16
+    else:
+        time_threshold = 10
+
     stream = pa.PyAudio().open(format=pa.paInt16, channels=1, rate=44100, input=True, input_device_index=input_index,
                                frames_per_buffer=int(44100 / 2))
     current_note_string = []
@@ -73,7 +78,7 @@ if __name__ == '__main__':
                 previous_string = current_note_string
                 start_time = datetime.now()
 
-            if (datetime.now() - start_time).seconds > 5:
+            if (datetime.now() - start_time).seconds > time_threshold:
                 current_wave_list = []
                 previous_string = []
                 current_note_string = []
