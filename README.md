@@ -14,7 +14,7 @@ This can be a stream from YouTube, Discord, Twitch, the game itself, etc. This w
 The best way you can accomplish this is with VAC ([Virtual Audio Cable](https://vac.muzychenko.net/)) or [VB-Cable](https://vb-audio.com/Cable/).
 I have only tried the last one, but any solution that routes the audio to a microphone will work (even a microphone to speaker but be mindful of the noise).
 
-_Note: You can also make this work without installing VB-Cable with Steam Streaming Microphone (thanks u/ExcruciatinglyApt on reddit for the suggestion). Skip the installation and substitute the following indications: "CABLE Input" -> "Speakers (Steam Streaming Microphone)", "CABLE Input" -> "Microphone (Steam Streaming Microphone)"_
+_Note: You can also make this work without installing VB-Cable with Steam Streaming Microphone (thanks u/ExcruciatinglyApt on reddit for the suggestion). Skip the installation and substitute the following indications: "CABLE Input" -> "Speakers (Steam Streaming Microphone)", "CABLE Output" -> "Microphone (Steam Streaming Microphone)"_
 
 To configure VB-Cable with Destiny 2 follow these steps:
 
@@ -37,7 +37,7 @@ _Note: Make sure you choose the output of the application and select "CABLE Inpu
 
 ![sound control panel](https://imgur.com/iFVw3k5.png)
 
-6. Select the Recording tab and right click on "CABLE Input"/"Speakers (Steam Streaming Microphone)" -> Properties.
+6. Select the Recording tab and right click on "CABLE Output"/"Microphone (Steam Streaming Microphone)" -> Properties.
 
 ![properties](https://imgur.com/Vp6O2DO.png)
 
