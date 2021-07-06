@@ -41,7 +41,12 @@ if __name__ == '__main__':
             with open(my_file, 'w') as f:
                 f.write(str(input_index))
 
-    encounter = input("Choose your encounter file (templar/atheon): ")
+    encounter = input("Choose your encounter file ((t)emplar/(a)theon): ").lower()
+
+    if encounter == 't':
+        encounter = 'templar'
+    elif encounter == 'a':
+        encounter = 'atheon'
 
     with open(resource_path(encounter + '.json')) as f:
         oracle_map = json.load(f)
